@@ -136,9 +136,13 @@ ul {
             justify-content: space-between;
             text-transform: uppercase;
             .btn-demo {
-                background-color: hsl(0, 100%, 68%);
+                transition: 0.5s;  
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b,  #03a9f4);
+    background-size: 400%;
+                // background-color: hsl(0, 100%, 68%);
                 color: white;
                 padding: 10px 20px;
+                z-index: 1;
                 text-transform: uppercase;
                 // width: 50%;
                 font-size: 60%;
@@ -149,6 +153,7 @@ ul {
             }
             .btn-demo:hover {
                 opacity: .9;
+                animation: animate 8s linear infinite;
             }
             .btn-sub {
                 color: hsl(230, 11%, 40%);
@@ -162,6 +167,15 @@ ul {
         
     }
 }
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+} 
 
 @keyframes myNav {
     0% {
