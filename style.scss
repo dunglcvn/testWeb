@@ -173,3 +173,66 @@ ul {
         opacity: 1;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    body {
+        overflow-x: hidden;
+    }
+    .heading {
+        .logo {
+            width: 3%;
+            margin-left: 2.2cm;
+        }
+        .nav {
+            #btn_hamburger {
+                display: none;
+            }
+            #btn_close {
+                display: none;
+            }
+            .nav-item {
+                display: block;
+                position: absolute;
+                top: 0%;
+                left: 60%;
+                animation: none;
+                transform: none;
+                display: flex;
+                background-color: unset;
+                border: none;
+                box-shadow: none;
+                li {
+                    margin-left: 1.5cm;
+                }
+                li:last-child {
+                    border-top: none;
+                    list-style: disc;
+                    color: #a8b4bd;
+                    padding-left: 1cm;
+                }
+            }
+        }
+    }
+
+    .body-section {
+        flex-direction: row-reverse;
+        width: 106%;
+        .img-devices {
+            width: 80%;
+        }
+
+        .main-content {
+            margin-left: 2.2cm;
+            .title-second {
+                width: 70%;
+                font-size: 250%;
+            }
+            .title-third {
+                width: 40%;
+            }
+            .btn {
+                width: 45%;
+            }
+        }
+    }
+}
