@@ -178,6 +178,8 @@ ul {
   background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
+  -webkit-animation: animate 8s linear infinite;
+  animation: animate 8s linear infinite;
   color: white;
   padding: 10px 20px;
   z-index: 1;
@@ -191,8 +193,6 @@ ul {
 
 .body-section .main-content .btn .btn-demo:hover {
   opacity: .9;
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
 }
 
 .body-section .main-content .btn .btn-sub {
