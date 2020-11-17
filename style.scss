@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    
+}
+
+a {
+    color: hsl(230, 29%, 20%);
+}
+
+ul {
+    cursor: default;
+}
+
+.container {
+    width: 90%;
+    margin: 1cm auto;
+}
+
+.heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1cm;
+    .logo {
+        margin-left: 25px;
+    }
+    .logo img {
+        width: 80%;
+        object-fit: cover;
+    }
+    .nav {
+        #btn_close {
+            display: none;
+        }
+        margin-top: 5px;
+        cursor: pointer;
+        .nav-item {
+            animation: myNav ease-in .3s;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 70%;
+            text-align: center;
+            transform: translate(-50%,-95%);
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 20px 20px;
+            line-height: 1.5cm;
+            box-shadow: 1px 1px 4px hsl(230, 11%, 40%);
+            li:last-child {
+               border-top: 1px solid hsl(205, 14%, 70%);
+            }
+            li:last-child a {
+                color: hsl(205, 14%, 70%);
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
+            display: none;
+        }
+        
+    }
+    .nav::before {
+        content: "";
+        position: absolute;
+        background-color: hsl(235, 7%, 65%);
+        width: 50%;
+        top: 0;
+        right: 0;
+        height: 57%;
+        border-bottom-left-radius: 20%;
+        z-index: -1;
+        opacity: .25;
+    }
+}
+
+.body-section {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    margin-bottom: 1cm;
+    flex-direction: column;
+    justify-content: center;
+    .img-devices {
+        overflow-x: hidden;
+    }
+    .img-devices img{
+        width: 140%;
+    }
+    .main-content {
+        margin-top: 1.5cm;
+        width: 100%;
+        .title-first {
+            margin-bottom: .5cm;
+            .new-content {
+                background-color: hsl(230, 29%, 20%);
+                color: white;
+                text-transform: uppercase;
+                padding: 2px 5px;
+                font-size: 70%;
+                font-weight: 700;
+                letter-spacing: 1px;
+                border-radius: 50%;
+            }
+            .title-content {
+                color: hsl(230, 11%, 40%);
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-left: .5cm;
+                font-size: 80%;
+            }
+        }
+
+        .title-second {
+            font-weight: 700;
+            font-size: 160%;
+            margin-bottom: .5cm;
+            color: hsl(230, 29%, 20%);
+            text-transform: uppercase;
+        }
+
+        .title-third {
+            margin-bottom: .5cm;
+            color: hsl(230, 11%, 40%);
+            width: 80%;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            .btn-demo {
+                background-color: hsl(0, 100%, 68%);
+                color: white;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                // width: 50%;
+                font-size: 60%;
+                font-weight: 700;
+                cursor: pointer;
+                border: none;
+                border-radius: 6%;
+            }
+            .btn-demo:hover {
+                opacity: .9;
+            }
+            .btn-sub {
+                color: hsl(230, 11%, 40%);
+                letter-spacing: 1.5px;
+                font-weight: 400;
+                font-size: 65%;
+                width: 50%;
+                align-self: center;
+            }
+        }
+        
+    }
+}
+
+@keyframes myNav {
+    0% {
+        transform: translate(-30%,-95%);
+        opacity: .3;
+    }
+    100% {
+        transform: translate(-50%,-95%);
+        opacity: 1;
+    }
+}
